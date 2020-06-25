@@ -1,0 +1,16 @@
+.questionDiv{
+    margin:100px;
+    background-color:aquamarine;
+    text-align:center;
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+    /* 3840 x 2160 */
+}
+body{
+    background-color:grey
+}
+input{
+    text-align:center
+}

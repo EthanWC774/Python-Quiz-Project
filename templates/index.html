@@ -1,13 +1,44 @@
 <html>
     <head>
         <title>Welcome!</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}?q={{ time }}" />
     </head>
-    <body>
-        <h1>Hello world!</h1>
-        <p>We can build a full webpage here</p>
-        <form>
-            <input type="text" name="nickname" value="Enter your nickname"/>
-            <input type="submit" value="Submit"/>
+    <html>
+        <body>
+        <img border="0" alt="Anton's fail" src="https://media.giphy.com/media/P07KUtlPVKvoQ/giphy.gif" width="120" height="100">
+    <h1>Can we guess your favorite food?</h1>
+        <form action="/sendFood" method="POST">
+        <div class="questionDiv">
+            <p>What's your favorite spice?</p>
+            <input type="radio" id="salt" name="spice" value="salt">
+                <label for="salt">Salt</label><br>
+            <input type="radio" id="paprika" name="spice" value="paprika">
+                <label for="paprika">Paprika</label><br>
+            <input type="radio" id="pepper" name="spice" value="pepper">
+                <label for="pepper">Pepper</label><br>
+            <br>
+        </div>
+        <div class="questionDiv">
+            <p>What drink do you like with your meal?</p>
+            <input type="radio" id="coke" name="drink" value="coke">
+                <label for="coke">Coke</label><br>
+            <input type="radio" id="champagne" name="drink" value="champagne">
+                <label for="champagne">Champagne</label><br>
+            <input type="radio" id="water" name="drink" value="water">
+                <label for="water">Water</label><br><br>
+        <div/>
+        <div class="questionDiv">
+            <p>If you could travel to one place, where would it be?</p>
+            <input type="radio" id="texas" name="travel" value="texas">
+                <label for="la">Texas</label><br>
+            <input type="radio" id="china" name="travel" value="china">
+                <label for="china">China</label><br>
+            <input type="radio" id="italy" name="travel" value="italy">
+                <label for="italy">Italy</label><br>
+            <input type="radio" id="japan" name="travel" value="japan">
+                <label for="japan">Japan</label><br><br>
+        <div/>
+            <input type="submit" value="Submit">
         </form>
     </body>
 </html>
