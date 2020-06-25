@@ -29,14 +29,16 @@ def quiz():
     Sushi = 0
     Steak = 0
     choice1 = request.form["spice"] 
+    choice2 = request.form["drink"]
     if choice1 == "salt":
         Ramen = Ramen + 1
         Steak = Steak + 1
-    elif choice1 == 'paprika':
-        print()
+    elif choice1 == 'no spice':
+        Sushi = Sushi + 2
     elif choice1 == 'pepper':
         Steak = Steak + 1
-   
+    
+        # START HERE-------------------------
     top_food = 0
     top_word = ""
     if Pasta > top_food:

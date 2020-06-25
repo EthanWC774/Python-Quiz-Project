@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Welcome!</title>
+        <title>Favorite Food?</title>
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}?q={{ time }}" />
     </head>
     <html>
@@ -12,8 +12,8 @@
             <p>What's your favorite spice?</p>
             <input type="radio" id="salt" name="spice" value="salt">
                 <label for="salt">Salt</label><br>
-            <input type="radio" id="paprika" name="spice" value="paprika">
-                <label for="paprika">Paprika</label><br>
+            <input type="radio" id="no spice" name="spice" value="no spice">
+                <label for="no spice">No Spice!</label><br>
             <input type="radio" id="pepper" name="spice" value="pepper">
                 <label for="pepper">Pepper</label><br>
             <br>
@@ -25,8 +25,9 @@
             <input type="radio" id="champagne" name="drink" value="champagne">
                 <label for="champagne">Champagne</label><br>
             <input type="radio" id="water" name="drink" value="water">
-                <label for="water">Water</label><br><br>
-        <div/>
+                <label for="water">Water</label><br>
+            <br>
+        </div>
         <div class="questionDiv">
             <p>If you could travel to one place, where would it be?</p>
             <input type="radio" id="texas" name="travel" value="texas">
@@ -37,7 +38,7 @@
                 <label for="italy">Italy</label><br>
             <input type="radio" id="japan" name="travel" value="japan">
                 <label for="japan">Japan</label><br><br>
-        <div/>
+        </div>
             <input type="submit" value="Submit">
         </form>
     </body>
